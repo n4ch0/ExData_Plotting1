@@ -15,6 +15,6 @@ data[,2] <-as.POSIXct(strptime(paste(data[,1],data[,2]), format="%Y-%m-%d %H:%M:
 for(i in 1:6){data[,i+2]=as.numeric((data[,i+2]))}
 
 #plot
-png("C:/Users/Nacho/Documents/plot2.png")
+png("plot2.png")
 plot(data$Time, data$Global_active_power, type= "l", ylab = "Global Active Power (kilowatts)", xlab = "")
 dev.off()

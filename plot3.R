@@ -15,7 +15,7 @@ data[,2] <-as.POSIXct(strptime(paste(data[,1],data[,2]), format="%Y-%m-%d %H:%M:
 for(i in 1:6){data[,i+2]=as.numeric((data[,i+2]))}
 
 #plot
-png("C:/Users/Nacho/Documents/plot3.png")
+png("plot3.png")
 plot(data$Time, data$Sub_metering_1, type= "l", ylab = "Energy sub metering", xlab = "")
 lines(data$Time, data$Sub_metering_2, type= "l", col = "red")
 lines(data$Time, data$Sub_metering_3, type= "l", col = "blue")
